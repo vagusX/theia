@@ -173,15 +173,16 @@ export class QuickOpenTask implements QuickOpenModel, QuickOpenHandler {
         this.items = [];
         this.actionProvider = undefined;
 
+        const configuredTasks = await this.taskService.getConfiguredTasks();
         const providedTasks = await this.taskService.getProvidedTasks();
-        if (!providedTasks.length) {
+        if (!configuredTasks && !providedTasks.length) {
             this.items.push(new QuickOpenItem({
                 label: 'No tasks found',
                 run: (_mode: QuickOpenMode): boolean => false
             }));
         }
 
-        providedTasks.forEach(task => {
+        [...configuredTasks, ...providedTasks].forEach(task => {
             this.items.push(new TaskConfigureQuickOpenItem(task, this.taskService, this.labelProvider));
         });
 
@@ -312,6 +313,8 @@ export class TaskAttachQuickOpenItem extends QuickOpenItem {
 }
 export class TaskConfigureQuickOpenItem extends QuickOpenGroupItem {
 
+    protected taskDefinitionRegistry: TaskDefinitionRegistry;
+
     constructor(
         protected readonly task: TaskConfiguration,
         protected readonly taskService: TaskService,
@@ -321,7 +324,10 @@ export class TaskConfigureQuickOpenItem extends QuickOpenGroupItem {
     }
 
     getLabel(): string {
-        return `${this.task._source}: ${this.task.label}`;
+        if (this.taskDefinitionRegistry && !!this.taskDefinitionRegistry.getDefinition(this.task)) {
+            return `${this.task._source}: ${this.task.label}`;
+        }
+        return `${this.task.type}: ${this.task.label}`;
     }
 
     getDescription(): string {
