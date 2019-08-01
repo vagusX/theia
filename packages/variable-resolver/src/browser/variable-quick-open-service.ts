@@ -18,6 +18,7 @@ import { inject, injectable } from 'inversify';
 import { MessageService } from '@theia/core/lib/common/message-service';
 import { QuickOpenService, QuickOpenModel, QuickOpenItem, QuickOpenMode, QuickInputService } from '@theia/core/lib/browser/quick-open';
 import { VariableRegistry, Variable } from './variable';
+import { VariableResolverService } from './variable-resolver-service';
 
 @injectable()
 export class VariableQuickOpenService implements QuickOpenModel {
@@ -29,6 +30,9 @@ export class VariableQuickOpenService implements QuickOpenModel {
 
     @inject(QuickInputService)
     protected readonly quickInputService: QuickInputService;
+
+    @inject(VariableResolverService)
+    protected readonly variableResolver: VariableResolverService;
 
     constructor(
         @inject(VariableRegistry) protected readonly variableRegistry: VariableRegistry,
@@ -64,8 +68,8 @@ export class VariableQuickOpenService implements QuickOpenModel {
         const argument = await this.quickInputService.open({
             placeHolder: 'Type a variable argument'
         });
-        const value = await variable.resolve(undefined, argument);
-        if (value) {
+        const value = await this.variableResolver.resolve('${' + variable.name + ':' + argument + '}');
+        if (typeof value === 'string') {
             this.messages.info(value);
         }
     }
