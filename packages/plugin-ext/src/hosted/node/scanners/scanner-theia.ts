@@ -114,7 +114,9 @@ export class TheiaPluginScanner implements PluginScanner {
     }
 
     protected readContributions(rawPlugin: PluginPackage): PluginContribution | undefined {
+        console.log('++++++++++++++++++++++++++++++++++++++++++++++ readContributions ', rawPlugin);
         if (!rawPlugin.contributes) {
+            console.log('+++ readContributions RETURN UNDEFINED');
             return undefined;
         }
 
@@ -187,8 +189,16 @@ export class TheiaPluginScanner implements PluginScanner {
         }
 
         if (rawPlugin.contributes!.taskDefinitions) {
+            console.log('+++ init task definitions');
             contributions.taskDefinitions = rawPlugin.contributes!.taskDefinitions!.map(definitionContribution => this.readTaskDefinition(definitionContribution));
         }
+        contributions.taskDefinitions = [{
+            taskType: 'tsc',
+            properties: {
+                required: ['script'],
+                all: ['script']
+            }
+        }]
 
         if (rawPlugin.contributes!.problemMatchers) {
             contributions.problemMatchers = rawPlugin.contributes!.problemMatchers as ProblemMatcherContribution[];
