@@ -61,6 +61,10 @@ export interface ProgressMessageOptions extends MessageOptions {
      * Default: `true`
      */
     readonly cancelable?: boolean;
+    /**
+     * Default: `notification`
+     */
+    readonly location?: 'scm' | 'window' | 'notification';
 }
 
 export interface Progress {

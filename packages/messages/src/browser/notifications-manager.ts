@@ -48,6 +48,7 @@ export namespace NotificationManager {
 
 export interface Notification {
     messageId: string;
+    location: 'window' | 'notification';
     message: string;
     source?: string;
     expandable: boolean;
@@ -165,7 +166,7 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
         const expandable = this.isExpandable(message, source, actions);
         const collapsed = expandable;
         this.notifications.set(messageId, {
-            messageId, message, type, actions, expandable, collapsed
+            messageId, message, type, actions, expandable, collapsed, location: 'notification'
         });
         this.openState = true;
         this.fireUpdateEvent();
@@ -220,8 +221,9 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
         const source  = plainMessage.source;
         const expandable = this.isExpandable(message, source, actions);
         const collapsed = expandable;
+        const location = this.getLocation(plainMessage);
         this.notifications.set(messageId, {
-            messageId, message, type, actions, expandable, collapsed, progress: 0
+            messageId, message, type, actions, expandable, collapsed, progress: 0, location
         });
         this.openState = true;
         this.fireUpdateEvent();
@@ -230,6 +232,9 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
             this.accept(messageId, ProgressMessage.Cancel);
         });
         return result.promise;
+    }
+    protected getLocation(plainMessage: ProgressMessage) {
+        return plainMessage.options && plainMessage.options.location === 'window' ? 'window' : 'notification';
     }
 
     async reportProgress(messageId: string, update: ProgressUpdate, plainMessage: ProgressMessage, cancellationToken: CancellationToken): Promise<void> {

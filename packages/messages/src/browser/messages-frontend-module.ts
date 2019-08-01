@@ -21,12 +21,14 @@ import { MessageClient } from '@theia/core/lib/common';
 import { NotificationManager, NotificationManagerImpl } from './notifications-manager';
 import { bindNotificationPreferences } from './notification-preferences';
 import { NotificationCenter } from './notification-center';
+import { StatusBarProgress } from './status-bar-progress';
 import { NotificationsContribution, NotificationsKeybindingContext } from './notifications-contribution';
 import { FrontendApplicationContribution, KeybindingContribution, KeybindingContext } from '@theia/core/lib/browser';
 import { CommandContribution } from '@theia/core';
 
 export default new ContainerModule((bind, unbind, isBound, rebind) => {
     bind(NotificationCenter).toSelf().inSingletonScope();
+    bind(StatusBarProgress).toSelf().inSingletonScope();
     bind(NotificationsContribution).toSelf().inSingletonScope();
     bind(FrontendApplicationContribution).toService(NotificationsContribution);
     bind(CommandContribution).toService(NotificationsContribution);

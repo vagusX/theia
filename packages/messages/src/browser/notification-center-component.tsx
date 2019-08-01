@@ -41,7 +41,10 @@ export class NotificationCenterComponent extends React.Component<NotificationCen
     async componentDidMount() {
         this.toDisposeOnUnmount.push(
             this.props.manager.onUpdate(event => {
-                this.setState(event);
+                this.setState({
+                    notifications: event.notifications.filter(n => n.location === 'notification'),
+                    open: event.open
+                });
             })
         );
     }

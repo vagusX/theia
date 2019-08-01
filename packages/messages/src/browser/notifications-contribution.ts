@@ -22,6 +22,7 @@ import { NotificationsCommands } from './notifications-commands';
 import { CommandContribution, CommandRegistry } from '@theia/core';
 import { NotificationManager } from './notifications-manager';
 import { NotificationCenter } from './notification-center';
+import { StatusBarProgress } from './status-bar-progress';
 
 @injectable()
 export class NotificationsContribution implements FrontendApplicationContribution, CommandContribution, KeybindingContribution {
@@ -32,7 +33,10 @@ export class NotificationsContribution implements FrontendApplicationContributio
     protected readonly manager: NotificationManager;
 
     @inject(NotificationCenter)
-    protected readonly notificationsCenter: NotificationCenter;
+    protected readonly notificationsCenter: NotificationCenter; // required for initialization
+
+    @inject(StatusBarProgress)
+    protected readonly statusBarProgress: StatusBarProgress; // required for initialization
 
     @inject(StatusBar)
     protected readonly statusBar: StatusBar;
@@ -43,7 +47,7 @@ export class NotificationsContribution implements FrontendApplicationContributio
 
     protected createStatusBarItem() {
         this.updateStatusBarItem();
-        this.manager.onUpdate(e => this.updateStatusBarItem(e.notifications.length));
+        this.manager.onUpdate(e => this.updateStatusBarItem(e.notifications.filter(n => n.location === 'notification').length));
     }
     protected updateStatusBarItem(count: number = 0) {
         this.statusBar.setElement(this.id, {

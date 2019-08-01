@@ -488,7 +488,6 @@ export interface NotificationExt {
         options: ProgressOptions,
         task: (progress: Progress<{ message?: string; increment?: number }>, token: CancellationToken) => PromiseLike<R>
     ): PromiseLike<R>;
-    $onCancel(id: string): void;
 }
 
 export interface ScmCommandArg {
@@ -613,16 +612,20 @@ export interface DecorationProvider {
 }
 
 export interface NotificationMain {
-    $startProgress(message: string): Promise<string | undefined>;
+    $startProgress(options: string | NotificationMain.StartProgressOptions): Promise<string>;
     $stopProgress(id: string): void;
-    $updateProgress(message: string, item: { message?: string, increment?: number }): void;
+    $updateProgress(id: string, report: NotificationMain.ProgressReport): void;
 }
-
-export interface StatusBarExt {
-    withProgress<R>(
-        options: ProgressOptions,
-        task: (progress: Progress<{ message?: string; increment?: number }>, token: CancellationToken) => PromiseLike<R>
-    ): PromiseLike<R>;
+export namespace NotificationMain {
+    export interface StartProgressOptions {
+        message: string;
+        location: 'scm' | 'window' | 'notification';
+    }
+    export interface ProgressReport {
+        message?: string;
+        increment?: number;
+        total?: number;
+    }
 }
 
 export enum EditorPosition {
