@@ -108,6 +108,7 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
     }
 
     async accept(notification: Notification | string, action: string | undefined): Promise<void> {
+        this.stopHideTimeout();
         const messageId = this.getId(notification);
         if (!messageId) {
             return;
@@ -132,16 +133,19 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
     }
 
     async clearAll() {
+        this.stopHideTimeout();
         this.openState = false;
         this.fireUpdateEvent();
         await Promise.all(Array.from(this.notifications.values()).map(n => this.clear(n)));
     }
 
     async clear(notification: Notification | string) {
+        this.stopHideTimeout();
         await this.accept(notification, undefined);
     }
 
     async toggleExpansion(notificationId: string) {
+        this.stopHideTimeout();
         const notification = this.find(notificationId);
         if (!notification) {
             return;
@@ -150,35 +154,47 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
         this.fireUpdateEvent();
     }
 
+    protected hideTimeout: number | undefined;
     showMessage(plainMessage: PlainMessage): Promise<string | undefined> {
+        this.stopHideTimeout();
+        if (!this.openState) {
+            this.startHideTimeout(this.getTimeout(plainMessage));
+        }
         const messageId = this.getMessageId(plainMessage);
         let result = this.resultPromises.get(messageId);
-        if (result) {
-            return result.promise;
-        }
-        result = new Deferred<string | undefined>();
-        this.resultPromises.set(messageId, result);
+        if (!result) {
+            result = new Deferred<string | undefined>();
+            this.resultPromises.set(messageId, result);
 
-        const message = this.renderMessage(plainMessage.text);
-        const type = this.toNotificationType(plainMessage.type);
-        const actions = Array.from(new Set(plainMessage.actions));
-        const source = plainMessage.source;
-        const expandable = this.isExpandable(message, source, actions);
-        const collapsed = expandable;
-        this.notifications.set(messageId, {
-            messageId, message, type, actions, expandable, collapsed, location: 'notification'
-        });
+            const message = this.renderMessage(plainMessage.text);
+            const type = this.toNotificationType(plainMessage.type);
+            const actions = Array.from(new Set(plainMessage.actions));
+            const source = plainMessage.source;
+            const expandable = this.isExpandable(message, source, actions);
+            const collapsed = expandable;
+            this.notifications.set(messageId, {
+                messageId, message, type, actions, expandable, collapsed, location: 'notification'
+            });
+        }
         this.openState = true;
         this.fireUpdateEvent();
-        if (actions.length === 0) {
-            const timeout = plainMessage.options && plainMessage.options.timeout || this.preferences['notification.timeout'];
-            if (timeout > 0) {
-                window.setTimeout(() => {
-                    this.clear(messageId);
-                }, timeout);
-            }
-        }
         return result.promise;
+    }
+    protected startHideTimeout(timeout: number) {
+        if (timeout > 0) {
+            this.hideTimeout = window.setTimeout(() => {
+                this.hide();
+            }, timeout);
+        }
+    }
+    protected stopHideTimeout() {
+        window.clearTimeout(this.hideTimeout);
+    }
+    protected getTimeout(plainMessage: PlainMessage) {
+        if (plainMessage.actions && !plainMessage.actions.length) {
+            return 0;
+        }
+        return plainMessage.options && plainMessage.options.timeout || this.preferences['notification.timeout'];
     }
     protected readonly mdEngine = markdownit({ html: true });
     protected renderMessage(content: string) {
@@ -208,6 +224,7 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
     }
 
     async showProgress(messageId: string, plainMessage: ProgressMessage, cancellationToken: CancellationToken): Promise<string | undefined> {
+        this.stopHideTimeout();
         let result = this.resultPromises.get(messageId);
         if (result) {
             return result.promise;
@@ -255,6 +272,7 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
     }
 
     async openLink(link: string) {
+        this.stopHideTimeout();
         const uri = new URI(link);
         const opener = await this.openerService.getOpener(uri);
         opener.open(uri);

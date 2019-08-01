@@ -28,7 +28,7 @@ export const NotificationConfigSchema: PreferenceSchema = {
     'properties': {
         'notification.timeout': {
             'type': 'number',
-            'description': 'The timeout for informative notifications.',
+            'description': 'Informative notifications will be hidden after this timeout.',
             'default': 30 * 1000 // `0` and negative values are treated as no timeout.
         }
     }
