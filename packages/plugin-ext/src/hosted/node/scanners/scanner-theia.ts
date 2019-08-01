@@ -198,7 +198,7 @@ export class TheiaPluginScanner implements PluginScanner {
                 required: ['script'],
                 all: ['script']
             }
-        }]
+        }];
 
         if (rawPlugin.contributes!.problemMatchers) {
             contributions.problemMatchers = rawPlugin.contributes!.problemMatchers as ProblemMatcherContribution[];
