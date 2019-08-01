@@ -1,5 +1,5 @@
 /********************************************************************************
- * Copyright (C) 2017 TypeFox and others.
+ * Copyright (C) 2019 TypeFox and others.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -14,4 +14,23 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-@import './notification-center.css';
+import { Command } from '@theia/core';
+
+export namespace NotificationsCommands {
+
+    const NOTIFICATIONS_CATEGORY = 'Notifications';
+
+    export const TOGGLE: Command = {
+        id: 'notifications.commands.toggle',
+        category: NOTIFICATIONS_CATEGORY,
+        iconClass: 'fa fa-th-list',
+        label: 'Toggle Notifications'
+    };
+
+    export const CLEAR_ALL: Command = {
+        id: 'notifications.commands.clearAll',
+        category: NOTIFICATIONS_CATEGORY,
+        iconClass: 'fa fa-times-circle',
+        label: 'Clear All Notifications'
+    };
+}

@@ -32,6 +32,7 @@ export interface Message {
     readonly text: string;
     readonly actions?: string[];
     readonly options?: MessageOptions;
+    readonly source?: string;
 }
 
 export interface ProgressMessage extends Message {
@@ -48,6 +49,10 @@ export namespace ProgressMessage {
 }
 
 export interface MessageOptions {
+    /**
+     * Timeout in milliseconds.
+     * `0` and negative values are treated as no timeout.
+     */
     readonly timeout?: number;
 }
 
@@ -86,7 +91,7 @@ export class MessageClient {
     }
 
     /**
-     * Show progress message with possible actions to user.
+     * Show a progress message with possible actions to user.
      *
      * To be implemented by an extension, e.g. by the messages extension.
      */
@@ -96,7 +101,7 @@ export class MessageClient {
     }
 
     /**
-     * Update started progress message.
+     * Update a previously created progress message.
      *
      * To be implemented by an extension, e.g. by the messages extension.
      */

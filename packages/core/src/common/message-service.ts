@@ -64,7 +64,7 @@ export class MessageService {
     protected processMessage(type: MessageType, text: string, args?: any[]): Promise<string | undefined> {
         if (!!args && args.length > 0) {
             const first = args[0];
-            const actions: string[] = args.filter(a => typeof a === 'string');
+            const actions = Array.from(new Set<string>(args.filter(a => typeof a === 'string')));
             const options = (typeof first === 'object' && !Array.isArray(first))
                 ? <MessageOptions>first
                 : undefined;
@@ -79,12 +79,12 @@ export class MessageService {
         const report = (update: ProgressUpdate) => {
             this.client.reportProgress(id, update, message, cancellationSource.token);
         };
-        let clientMessage = message;
+        const actions = new Set<string>(message.actions);
         if (ProgressMessage.isCancelable(message)) {
-            const actions = new Set<string>(message.actions);
+            actions.delete(ProgressMessage.Cancel);
             actions.add(ProgressMessage.Cancel);
-            clientMessage = { ...message, actions: Array.from(actions) };
         }
+        const clientMessage = { ...message, actions: Array.from(actions) };
         const result = this.client.showProgress(id, clientMessage, cancellationSource.token);
         if (ProgressMessage.isCancelable(message) && typeof onDidCancel === 'function') {
             result.then(value => {
