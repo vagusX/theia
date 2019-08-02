@@ -45,11 +45,11 @@ export class NotificationsContribution implements FrontendApplicationContributio
         this.createStatusBarItem();
     }
 
-    protected createStatusBarItem() {
+    protected createStatusBarItem(): void {
         this.updateStatusBarItem();
         this.manager.onUpdate(e => this.updateStatusBarItem(e.notifications.filter(n => n.location === 'notification').length));
     }
-    protected updateStatusBarItem(count: number = 0) {
+    protected updateStatusBarItem(count: number = 0): void {
         this.statusBar.setElement(this.id, {
             text: this.getStatusBarItemText(count),
             alignment: StatusBarAlignment.RIGHT,
@@ -57,7 +57,7 @@ export class NotificationsContribution implements FrontendApplicationContributio
             command: NotificationsCommands.TOGGLE.id
         });
     }
-    protected getStatusBarItemText(count: number) {
+    protected getStatusBarItemText(count: number): string {
         return `$(bell) ${count ? ` ${count}` : '' }`;
     }
 

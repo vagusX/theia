@@ -64,7 +64,7 @@ export interface ProgressMessageOptions extends MessageOptions {
     /**
      * Default: `notification`
      */
-    readonly location?: 'scm' | 'window' | 'notification';
+    readonly location?: 'window' | 'notification' | string;
 }
 
 export interface Progress {

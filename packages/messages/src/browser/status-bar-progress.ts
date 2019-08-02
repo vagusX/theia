@@ -30,13 +30,13 @@ export class StatusBarProgress {
     protected readonly manager: NotificationManager;
 
     @postConstruct()
-    protected async init() {
+    protected init(): void {
         this.manager.onUpdate(event => {
             this.process(event.notifications.filter(n => n.location === 'window'));
         });
     }
     protected queue: string[] = [];
-    protected process(notifications: Notification[]) {
+    protected process(notifications: Notification[]): void {
         const newIds = notifications.map(n => n.messageId).filter(id => this.queue.indexOf(id) === -1);
         this.queue.push(...newIds);
         let notification: Notification | undefined;
@@ -50,7 +50,7 @@ export class StatusBarProgress {
         this.update(notification);
     }
 
-    protected update(notification: Notification | undefined) {
+    protected update(notification: Notification | undefined): void {
         if (!notification) {
             this.statusBar.removeElement(this.id);
             return;

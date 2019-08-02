@@ -31,12 +31,12 @@ export const NotificationManager = Symbol('NotificationManager');
 export interface NotificationManager {
     readonly open: boolean;
     readonly onUpdate: Event<NotificationManager.UpdateEvent>;
-    accept(notification: Notification | string, action: string): Promise<void>;
-    hide(): Promise<void>;
-    toggle(): Promise<void>;
-    clear(notification: Notification | string): Promise<void>;
-    clearAll(): Promise<void>;
-    toggleExpansion(notification: string): Promise<void>;
+    accept(notification: Notification | string, action: string): void;
+    hide(): void;
+    toggle(): void;
+    clear(notification: Notification | string): void;
+    clearAll(): void;
+    toggleExpansion(notification: string): void;
     openLink(link: string): Promise<void>;
 }
 export namespace NotificationManager {
@@ -48,14 +48,18 @@ export namespace NotificationManager {
 
 export interface Notification {
     messageId: string;
-    location: 'window' | 'notification';
+    location: Notification.Location;
     message: string;
     source?: string;
     expandable: boolean;
     collapsed: boolean;
-    type: 'info' | 'warning' | 'error' | 'progress';
+    type: Notification.Type;
     actions: string[];
     progress?: number;
+}
+export namespace Notification {
+    export type Type = 'info' | 'warning' | 'error' | 'progress';
+    export type Location = 'window' | 'notification';
 }
 
 @injectable()
@@ -84,11 +88,11 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
     protected notificationCenterVisibleKey: ContextKey<boolean>;
 
     @postConstruct()
-    protected async init() {
+    protected async init(): Promise<void> {
         this.notificationToastsVisibleKey = this.contextKeyService.createKey<boolean>('notificationToastsVisible', false);
         this.notificationCenterVisibleKey = this.contextKeyService.createKey<boolean>('notificationCenterVisible', false);
     }
-    protected updaetContextKeys() {
+    protected updaetContextKeys(): void {
         this.notificationToastsVisibleKey.set(this.openState);
         this.notificationCenterVisibleKey.set(this.openState);
     }
@@ -98,16 +102,16 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
         return this.openState;
     }
 
-    async hide(): Promise<void> {
+    hide(): void {
         this.openState = false;
         this.fireUpdateEvent();
     }
-    async toggle(): Promise<void> {
+    toggle(): void {
         this.openState = !this.openState;
         this.fireUpdateEvent();
     }
 
-    async accept(notification: Notification | string, action: string | undefined): Promise<void> {
+    accept(notification: Notification | string, action: string | undefined): void {
         this.stopHideTimeout();
         const messageId = this.getId(notification);
         if (!messageId) {
@@ -125,26 +129,26 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
         }
         this.fireUpdateEvent();
     }
-    protected find(notification: Notification | string) {
+    protected find(notification: Notification | string): Notification | undefined {
         return typeof notification === 'string' ? this.notifications.get(notification) : notification;
     }
-    protected getId(notification: Notification | string) {
+    protected getId(notification: Notification | string): string {
         return typeof notification === 'string' ? notification : notification.messageId;
     }
 
-    async clearAll() {
+    clearAll(): void {
         this.stopHideTimeout();
         this.openState = false;
         this.fireUpdateEvent();
-        await Promise.all(Array.from(this.notifications.values()).map(n => this.clear(n)));
+        Array.from(this.notifications.values()).forEach(n => this.clear(n));
     }
 
-    async clear(notification: Notification | string) {
+    clear(notification: Notification | string): void {
         this.stopHideTimeout();
-        await this.accept(notification, undefined);
+        this.accept(notification, undefined);
     }
 
-    async toggleExpansion(notificationId: string) {
+    async toggleExpansion(notificationId: string): Promise<void> {
         this.stopHideTimeout();
         const notification = this.find(notificationId);
         if (!notification) {
@@ -180,34 +184,34 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
         this.fireUpdateEvent();
         return result.promise;
     }
-    protected startHideTimeout(timeout: number) {
+    protected startHideTimeout(timeout: number): void {
         if (timeout > 0) {
             this.hideTimeout = window.setTimeout(() => {
                 this.hide();
             }, timeout);
         }
     }
-    protected stopHideTimeout() {
+    protected stopHideTimeout(): void {
         window.clearTimeout(this.hideTimeout);
     }
-    protected getTimeout(plainMessage: PlainMessage) {
+    protected getTimeout(plainMessage: PlainMessage): number {
         if (plainMessage.actions && !plainMessage.actions.length) {
             return 0;
         }
         return plainMessage.options && plainMessage.options.timeout || this.preferences['notification.timeout'];
     }
     protected readonly mdEngine = markdownit({ html: true });
-    protected renderMessage(content: string) {
+    protected renderMessage(content: string): string {
         const contentWithoutNewlines = content.replace(/(\r)?\n/gm, ' ');
         return this.mdEngine.renderInline(contentWithoutNewlines);
     }
-    protected isExpandable(message: string, source: string | undefined, actions: string[]) {
+    protected isExpandable(message: string, source: string | undefined, actions: string[]): boolean {
         if (!actions.length && source) {
             return true;
         }
         return message.length > 500;
     }
-    protected toNotificationType(type?: MessageType) {
+    protected toNotificationType(type?: MessageType): Notification.Type {
         switch (type) {
             case MessageType.Error:
                 return 'error';
@@ -250,7 +254,7 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
         });
         return result.promise;
     }
-    protected getLocation(plainMessage: ProgressMessage) {
+    protected getLocation(plainMessage: ProgressMessage): Notification.Location {
         return plainMessage.options && plainMessage.options.location === 'window' ? 'window' : 'notification';
     }
 
@@ -267,11 +271,11 @@ export class NotificationManagerImpl extends MessageClient implements Notificati
         }
         this.fireUpdateEvent();
     }
-    protected toPlainProgress(update: ProgressUpdate) {
+    protected toPlainProgress(update: ProgressUpdate): number | undefined {
         return update.work && Math.round(update.work.done / update.work.total * 100);
     }
 
-    async openLink(link: string) {
+    async openLink(link: string): Promise<void> {
         this.stopHideTimeout();
         const uri = new URI(link);
         const opener = await this.openerService.getOpener(uri);

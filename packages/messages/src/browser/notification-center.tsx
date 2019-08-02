@@ -31,13 +31,13 @@ export class NotificationCenter {
     protected readonly manager: NotificationManager;
 
     @postConstruct()
-    protected async init() {
+    protected init(): void {
         this.createOverlayContainer();
         this.render();
     }
 
     protected container: HTMLDivElement;
-    protected createOverlayContainer() {
+    protected createOverlayContainer(): void {
         this.container = window.document.createElement('div');
         this.container.className = 'theia-notification-center-overlay';
         if (window.document.body) {
@@ -45,7 +45,7 @@ export class NotificationCenter {
         }
     }
 
-    protected render() {
+    protected render(): void {
         ReactDOM.render(<NotificationCenterComponent manager={this.manager} />, this.container);
     }
 

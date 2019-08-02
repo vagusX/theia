@@ -38,7 +38,7 @@ export class NotificationCenterComponent extends React.Component<NotificationCen
 
     protected readonly toDisposeOnUnmount = new DisposableCollection();
 
-    async componentDidMount() {
+    async componentDidMount(): Promise<void> {
         this.toDisposeOnUnmount.push(
             this.props.manager.onUpdate(event => {
                 this.setState({
@@ -48,11 +48,11 @@ export class NotificationCenterComponent extends React.Component<NotificationCen
             })
         );
     }
-    componentWillUnmount() {
+    componentWillUnmount(): void {
         this.toDisposeOnUnmount.dispose();
     }
 
-    render() {
+    render(): React.ReactNode {
         const empty = this.state.notifications.length === 0;
         const showHeader = empty ? { display: 'flex' } : {};
         const title = empty ? 'NO NOTIFICATIONS' : 'NOTIFICATIONS';
@@ -76,27 +76,27 @@ export class NotificationCenterComponent extends React.Component<NotificationCen
         );
     }
 
-    protected onHide() {
+    protected onHide(): void {
         this.props.manager.hide();
     }
 
-    protected onClearAll() {
+    protected onClearAll(): void {
         this.props.manager.clearAll();
     }
 
-    protected onClear(messageId: string) {
+    protected onClear(messageId: string): void {
         this.props.manager.clear(messageId);
     }
 
-    protected onToggleExpansion(messageId: string) {
+    protected onToggleExpansion(messageId: string): void {
         this.props.manager.toggleExpansion(messageId);
     }
 
-    protected onAction(messageId: string, action: string) {
+    protected onAction(messageId: string, action: string): void {
         this.props.manager.accept(messageId, action);
     }
 
-    protected messageClickeHandler(event: React.MouseEvent) {
+    protected messageClickeHandler(event: React.MouseEvent): void {
         if (event.target instanceof HTMLAnchorElement) {
             event.stopPropagation();
             event.preventDefault();
@@ -105,7 +105,7 @@ export class NotificationCenterComponent extends React.Component<NotificationCen
         }
     }
 
-    protected renderNotification(notification: Notification) {
+    protected renderNotification(notification: Notification): React.ReactNode {
         const { messageId, message, type, progress, collapsed, expandable } = notification;
         return (<div key={messageId} className='theia-notification-list-item'>
             <div className={`theia-notification-list-item-content ${collapsed ? 'collapsed' : ''}`}>
@@ -137,7 +137,7 @@ export class NotificationCenterComponent extends React.Component<NotificationCen
             </div>
             {typeof progress === 'number' && (
                 <div className='theia-notification-item-progress'>
-                    <div className='theia-notification-item-progressbar' style={{ width: `${progress}px` }} />
+                    <div className='theia-notification-item-progressbar' style={{ width: `${progress}%` }} />
                 </div>
             )}
         </div>);
