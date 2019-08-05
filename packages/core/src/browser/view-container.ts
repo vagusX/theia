@@ -412,7 +412,7 @@ export class ViewContainer extends BaseWidget implements StatefulWidget, Applica
             execute: () => {
                 const toHide = find(this.containerLayout.iter(), part => part.id === toRegister.id);
                 if (toHide) {
-                    this.toggleVisibility(toHide);
+                    toHide.setHidden(!toHide.isHidden);
                 }
             },
             isToggled: () => {
@@ -434,7 +434,7 @@ export class ViewContainer extends BaseWidget implements StatefulWidget, Applica
      * Register a menu action to toggle the visibility of the new part.
      * The menu action is unregistered first to enable refreshing the order of menu actions.
      */
-    protected refreshMenu(part: ViewContainerPart) {
+    protected refreshMenu(part: ViewContainerPart): void {
         const commandId = this.toggleVisibilityCommandId(part);
         this.menuRegistry.unregisterMenuAction(commandId);
         if (!part.wrapped.title.label) {
@@ -467,15 +467,6 @@ export class ViewContainer extends BaseWidget implements StatefulWidget, Applica
 
     protected get globalHideCommandId(): string {
         return `${this.id}:toggle-visibility`;
-    }
-
-    protected toggleVisibility(part: ViewContainerPart): void {
-        if (part.canHide) {
-            part.setHidden(!part.isHidden);
-            if (!part.isHidden) {
-                part.collapsed = false;
-            }
-        }
     }
 
     protected moveBefore(toMovedId: string, moveBeforeThisId: string): void {
@@ -519,7 +510,6 @@ export class ViewContainer extends BaseWidget implements StatefulWidget, Applica
             return undefined;
         }
         part.setHidden(false);
-        part.collapsed = false;
         return part;
     }
 
@@ -697,7 +687,17 @@ export class ViewContainerPart extends BaseWidget {
         this.collapsedEmitter.fire(collapsed);
     }
 
-    get canHide() {
+    setHidden(hidden: boolean): void {
+        if (!this.canHide) {
+            return;
+        }
+        super.setHidden(hidden);
+        if (!this.isHidden) {
+            this.collapsed = false;
+        }
+    }
+
+    get canHide(): boolean {
         return this.options.canHide === undefined || this.options.canHide;
     }
 
