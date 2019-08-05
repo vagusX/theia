@@ -1,0 +1,2714 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PreferencesContainer | Theia TypeDoc</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Theia TypeDoc</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/preferences.html">preferences</a>
+				</li>
+				<li>
+					<a href="preferences.preferencescontainer.html">PreferencesContainer</a>
+				</li>
+			</ul>
+			<h1>Class PreferencesContainer</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="tsd-signature-type">SplitPanel</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">PreferencesContainer</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><span class="tsd-signature-type">IDisposable</span></li>
+					<li><span class="tsd-signature-type">IMessageHandler</span></li>
+					<li><a href="../modules/core.applicationshell.trackablewidgetprovider.html" class="tsd-signature-type">TrackableWidgetProvider</a></li>
+					<li><a href="../modules/core.saveable.html" class="tsd-signature-type">Saveable</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-class"><a href="preferences.preferencescontainer.renderer.html" class="tsd-kind-icon">Renderer</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-class"><a href="../interfaces/preferences.preferencescontainer.ioptions.html" class="tsd-kind-icon">IOptions</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="preferences.preferencescontainer.html#alignment" class="tsd-kind-icon">Alignment</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="preferences.preferencescontainer.html#irenderer" class="tsd-kind-icon">IRenderer</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="preferences.preferencescontainer.html#orientation" class="tsd-kind-icon">Orientation</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="preferences.preferencescontainer.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#_preferencescope" class="tsd-kind-icon">_preference<wbr>Scope</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#alignment-1" class="tsd-kind-icon">alignment</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="preferences.preferencescontainer.html#currenteditor" class="tsd-kind-icon">current<wbr>Editor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#dataset" class="tsd-kind-icon">dataset</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="preferences.preferencescontainer.html#deferrededitors" class="tsd-kind-icon">deferred<wbr>Editors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#disposed" class="tsd-kind-icon">disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="preferences.preferencescontainer.html#editors" class="tsd-kind-icon">editors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#editorscontainer" class="tsd-kind-icon">editors<wbr>Container</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#handles" class="tsd-kind-icon">handles</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#isattached" class="tsd-kind-icon">is<wbr>Attached</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#layout" class="tsd-kind-icon">layout</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#messageservice" class="tsd-kind-icon">message<wbr>Service</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#node" class="tsd-kind-icon">node</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="preferences.preferencescontainer.html#ondidchangetrackablewidgets" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Trackable<wbr>Widgets</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#ondidchangetrackablewidgetsemitter" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Trackable<wbr>Widgets<wbr>Emitter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="preferences.preferencescontainer.html#ondirtychanged" class="tsd-kind-icon">on<wbr>Dirty<wbr>Changed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#ondirtychangedemitter" class="tsd-kind-icon">on<wbr>Dirty<wbr>Changed<wbr>Emitter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#orientation-1" class="tsd-kind-icon">orientation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#parent" class="tsd-kind-icon">parent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#preferenceservice" class="tsd-kind-icon">preference<wbr>Service</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#renderer-1" class="tsd-kind-icon">renderer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#shell" class="tsd-kind-icon">shell</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#spacing" class="tsd-kind-icon">spacing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#title" class="tsd-kind-icon">title</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#treewidget" class="tsd-kind-icon">tree<wbr>Widget</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#widgetmanager" class="tsd-kind-icon">widget<wbr>Manager</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#widgets" class="tsd-kind-icon">widgets</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#workspaceservice" class="tsd-kind-icon">workspace<wbr>Service</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="preferences.preferencescontainer.html#id-1" class="tsd-kind-icon">ID</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="preferences.preferencescontainer.html#defaultrenderer" class="tsd-kind-icon">default<wbr>Renderer</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="preferences.preferencescontainer.html#autosave" class="tsd-kind-icon">auto<wbr>Save</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="preferences.preferencescontainer.html#dirty" class="tsd-kind-icon">dirty</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="preferences.preferencescontainer.html#preferencescope" class="tsd-kind-icon">preference<wbr>Scope</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#activate" class="tsd-kind-icon">activate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="preferences.preferencescontainer.html#activatepreferenceeditor" class="tsd-kind-icon">activate<wbr>Preference<wbr>Editor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#addclass" class="tsd-kind-icon">add<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#addwidget" class="tsd-kind-icon">add<wbr>Widget</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#children" class="tsd-kind-icon">children</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#clearflag" class="tsd-kind-icon">clear<wbr>Flag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#contains" class="tsd-kind-icon">contains</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="preferences.preferencescontainer.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="preferences.preferencescontainer.html#doactivatepreferenceeditor" class="tsd-kind-icon">do<wbr>Activate<wbr>Preference<wbr>Editor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#fit" class="tsd-kind-icon">fit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="preferences.preferencescontainer.html#gettrackablewidgets" class="tsd-kind-icon">get<wbr>Trackable<wbr>Widgets</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#handleeditorschanged" class="tsd-kind-icon">handle<wbr>Editors<wbr>Changed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#handleevent" class="tsd-kind-icon">handle<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#hasclass" class="tsd-kind-icon">has<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#hide" class="tsd-kind-icon">hide</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="preferences.preferencescontainer.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#insertwidget" class="tsd-kind-icon">insert<wbr>Widget</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#notifylayout" class="tsd-kind-icon">notify<wbr>Layout</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="preferences.preferencescontainer.html#onactivaterequest" class="tsd-kind-icon">on<wbr>Activate<wbr>Request</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="preferences.preferencescontainer.html#onafterattach" class="tsd-kind-icon">on<wbr>After<wbr>Attach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onafterdetach" class="tsd-kind-icon">on<wbr>After<wbr>Detach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onafterhide" class="tsd-kind-icon">on<wbr>After<wbr>Hide</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onaftershow" class="tsd-kind-icon">on<wbr>After<wbr>Show</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onbeforeattach" class="tsd-kind-icon">on<wbr>Before<wbr>Attach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onbeforedetach" class="tsd-kind-icon">on<wbr>Before<wbr>Detach</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onbeforehide" class="tsd-kind-icon">on<wbr>Before<wbr>Hide</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onbeforeshow" class="tsd-kind-icon">on<wbr>Before<wbr>Show</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onchildadded" class="tsd-kind-icon">on<wbr>Child<wbr>Added</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onchildremoved" class="tsd-kind-icon">on<wbr>Child<wbr>Removed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="preferences.preferencescontainer.html#oncloserequest" class="tsd-kind-icon">on<wbr>Close<wbr>Request</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onfitrequest" class="tsd-kind-icon">on<wbr>Fit<wbr>Request</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onresize" class="tsd-kind-icon">on<wbr>Resize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="preferences.preferencescontainer.html#onupdaterequest" class="tsd-kind-icon">on<wbr>Update<wbr>Request</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#processmessage" class="tsd-kind-icon">process<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="preferences.preferencescontainer.html#refreshfolderspreferenceseditor" class="tsd-kind-icon">refresh<wbr>Folders<wbr>Preferences<wbr>Editor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#relativesizes" class="tsd-kind-icon">relative<wbr>Sizes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#removeclass" class="tsd-kind-icon">remove<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="preferences.preferencescontainer.html#save" class="tsd-kind-icon">save</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#setflag" class="tsd-kind-icon">set<wbr>Flag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#sethidden" class="tsd-kind-icon">set<wbr>Hidden</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#setrelativesizes" class="tsd-kind-icon">set<wbr>Relative<wbr>Sizes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#show" class="tsd-kind-icon">show</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#testflag" class="tsd-kind-icon">test<wbr>Flag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#toggleclass" class="tsd-kind-icon">toggle<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="preferences.preferencescontainer.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="preferences.preferencescontainer.html#getstretch" class="tsd-kind-icon">get<wbr>Stretch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="preferences.preferencescontainer.html#setstretch" class="tsd-kind-icon">set<wbr>Stretch</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="alignment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Alignment</h3>
+					<div class="tsd-signature tsd-kind-icon">Alignment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SplitLayout.Alignment</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:146</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A type alias for a split panel alignment.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="irenderer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> IRenderer</h3>
+					<div class="tsd-signature tsd-kind-icon">IRenderer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IRenderer</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:150</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A type alias for a split panel renderer.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="orientation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Orientation</h3>
+					<div class="tsd-signature tsd-kind-icon">Orientation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SplitLayout.Orientation</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:142</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A type alias for a split panel orientation.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Preferences<wbr>Container<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">SplitPanel.IOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="preferences.preferencescontainer.html" class="tsd-signature-type">PreferencesContainer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from SplitPanel.__constructor</p>
+								<p>Overrides Panel.__constructor</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:11</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Construct a new split panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">SplitPanel.IOptions</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The options for initializing the split panel.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="preferences.preferencescontainer.html" class="tsd-signature-type">PreferencesContainer</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_preferencescope" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _preference<wbr>Scope</h3>
+					<div class="tsd-signature tsd-kind-icon">_preference<wbr>Scope<span class="tsd-signature-symbol">:</span> <a href="../enums/core.preferencescope.html" class="tsd-signature-type">PreferenceScope</a><span class="tsd-signature-symbol"> =&nbsp;PreferenceScope.User</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L88">preferences/src/browser/preferences-tree-widget.ts:88</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="alignment-1" class="tsd-anchor"></a>
+					<h3>alignment</h3>
+					<div class="tsd-signature tsd-kind-icon">alignment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SplitPanel.Alignment</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from SplitPanel.alignment</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:47</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Set the content alignment for the split panel.</p>
+						</div>
+						<h4 id="notes">Notes</h4>
+						<p>This is the alignment of the widgets in the layout direction.</p>
+						<p>The alignment has no effect if the widgets can expand to fill the
+						entire split panel.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="currenteditor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> current<wbr>Editor</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Editor<span class="tsd-signature-symbol">:</span> <a href="preferences.preferenceseditorwidget.html" class="tsd-signature-type">PreferencesEditorWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L61">preferences/src/browser/preferences-tree-widget.ts:61</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="dataset" class="tsd-anchor"></a>
+					<h3>dataset</h3>
+					<div class="tsd-signature tsd-kind-icon">dataset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DOMStringMap</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Widget.dataset</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:81</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The dataset for the widget&#39;s DOM node.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="deferrededitors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> deferred<wbr>Editors</h3>
+					<div class="tsd-signature tsd-kind-icon">deferred<wbr>Editors<span class="tsd-signature-symbol">:</span> <a href="core.deferred.html" class="tsd-signature-type">Deferred</a><span class="tsd-signature-symbol">&lt;</span><a href="preferences.preferenceseditorwidget.html" class="tsd-signature-type">PreferencesEditorWidget</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Deferred&lt;PreferencesEditorWidget[]&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L63">preferences/src/browser/preferences-tree-widget.ts:63</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="disposed" class="tsd-anchor"></a>
+					<h3>disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ISignal</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Widget.disposed</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:34</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A signal emitted when the widget is disposed.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="editors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> editors</h3>
+					<div class="tsd-signature tsd-kind-icon">editors<span class="tsd-signature-symbol">:</span> <a href="preferences.preferenceseditorwidget.html" class="tsd-signature-type">PreferencesEditorWidget</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L62">preferences/src/browser/preferences-tree-widget.ts:62</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="editorscontainer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> editors<wbr>Container</h3>
+					<div class="tsd-signature tsd-kind-icon">editors<wbr>Container<span class="tsd-signature-symbol">:</span> <a href="preferences.preferenceseditorscontainer.html" class="tsd-signature-type">PreferencesEditorsContainer</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L60">preferences/src/browser/preferences-tree-widget.ts:60</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="handles" class="tsd-anchor"></a>
+					<h3>handles</h3>
+					<div class="tsd-signature tsd-kind-icon">handles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from SplitPanel.handles</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:62</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A read-only array of the split handles in the panel.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Widget.id</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:77</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Set the id of the widget&#39;s DOM node.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isattached" class="tsd-anchor"></a>
+					<h3>is<wbr>Attached</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Attached<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Widget.isAttached</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:46</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test whether the widget&#39;s node is attached to the DOM.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Widget.isDisposed</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:42</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test whether the widget has been disposed.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="ishidden" class="tsd-anchor"></a>
+					<h3>is<wbr>Hidden</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Hidden<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Widget.isHidden</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:50</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test whether the widget is explicitly hidden.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isvisible" class="tsd-anchor"></a>
+					<h3>is<wbr>Visible</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Widget.isVisible</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:58</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Test whether the widget is visible.</p>
+						</div>
+						<h4 id="notes">Notes</h4>
+						<p>A widget is visible when it is attached to the DOM, is not
+						explicitly hidden, and has no explicitly hidden ancestors.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="layout" class="tsd-anchor"></a>
+					<h3>layout</h3>
+					<div class="tsd-signature tsd-kind-icon">layout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Layout</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Widget.layout</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:109</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Set the layout for the widget.</p>
+						</div>
+						<h4 id="notes">Notes</h4>
+						<p>The layout is single-use only. It cannot be changed after the
+						first assignment.</p>
+						<p>The layout is disposed automatically when the widget is disposed.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="messageservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> message<wbr>Service</h3>
+					<div class="tsd-signature tsd-kind-icon">message<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.messageservice.html" class="tsd-signature-type">MessageService</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L80">preferences/src/browser/preferences-tree-widget.ts:80</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="node" class="tsd-anchor"></a>
+					<h3>node</h3>
+					<div class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Widget.node</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:38</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Get the DOM node owned by the widget.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="ondidchangetrackablewidgets" class="tsd-anchor"></a>
+					<h3>on<wbr>Did<wbr>Change<wbr>Trackable<wbr>Widgets</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Trackable<wbr>Widgets<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;this.onDidChangeTrackableWidgetsEmitter.event</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L69">preferences/src/browser/preferences-tree-widget.ts:69</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="ondidchangetrackablewidgetsemitter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Did<wbr>Change<wbr>Trackable<wbr>Widgets<wbr>Emitter</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Trackable<wbr>Widgets<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Emitter&lt;Widget[]&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L68">preferences/src/browser/preferences-tree-widget.ts:68</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="ondirtychanged" class="tsd-anchor"></a>
+					<h3>on<wbr>Dirty<wbr>Changed</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Dirty<wbr>Changed<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;this.onDirtyChangedEmitter.event</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L66">preferences/src/browser/preferences-tree-widget.ts:66</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="ondirtychangedemitter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Dirty<wbr>Changed<wbr>Emitter</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Dirty<wbr>Changed<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Emitter&lt;void&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L65">preferences/src/browser/preferences-tree-widget.ts:65</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="orientation-1" class="tsd-anchor"></a>
+					<h3>orientation</h3>
+					<div class="tsd-signature tsd-kind-icon">orientation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SplitPanel.Orientation</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from SplitPanel.orientation</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:28</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Set the layout orientation for the split panel.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="parent" class="tsd-anchor"></a>
+					<h3>parent</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Widget.parent</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:96</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Set the parent of the widget.</p>
+						</div>
+						<h4 id="notes">Notes</h4>
+						<p>Children are typically added to a widget by using a layout, which
+						means user code will not normally set the parent widget directly.</p>
+						<p>The widget will be automatically removed from its old parent.</p>
+						<p>This is a no-op if there is no effective parent change.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="preferenceservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> preference<wbr>Service</h3>
+					<div class="tsd-signature tsd-kind-icon">preference<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.preferenceservice.html" class="tsd-signature-type">PreferenceService</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L83">preferences/src/browser/preferences-tree-widget.ts:83</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="renderer-1" class="tsd-anchor"></a>
+					<h3>renderer</h3>
+					<div class="tsd-signature tsd-kind-icon">renderer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SplitPanel.IRenderer</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from SplitPanel.renderer</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:58</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The renderer used by the split panel.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="shell" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> shell</h3>
+					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <a href="core.applicationshell.html" class="tsd-signature-type">ApplicationShell</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L77">preferences/src/browser/preferences-tree-widget.ts:77</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="spacing" class="tsd-anchor"></a>
+					<h3>spacing</h3>
+					<div class="tsd-signature tsd-kind-icon">spacing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from SplitPanel.spacing</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:54</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Set the inter-element spacing for the split panel.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="title" class="tsd-anchor"></a>
+					<h3>title</h3>
+					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Title</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Widget.title</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:70</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The title object for the widget.</p>
+						</div>
+						<h4 id="notes">Notes</h4>
+						<p>The title object is used by some container widgets when displaying
+						the widget alongside some title, such as a tab panel or side bar.</p>
+						<p>Since not all widgets will use the title, it is created on demand.</p>
+						<p>The <code>owner</code> property of the title is set to this widget.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="todispose" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> to<wbr>Dispose</h3>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <a href="core.disposablecollection.html" class="tsd-signature-type">DisposableCollection</a><span class="tsd-signature-symbol"> =&nbsp;new DisposableCollection()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L71">preferences/src/browser/preferences-tree-widget.ts:71</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="treewidget" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> tree<wbr>Widget</h3>
+					<div class="tsd-signature tsd-kind-icon">tree<wbr>Widget<span class="tsd-signature-symbol">:</span> <a href="preferences.preferencestreewidget.html" class="tsd-signature-type">PreferencesTreeWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L59">preferences/src/browser/preferences-tree-widget.ts:59</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="widgetmanager" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> widget<wbr>Manager</h3>
+					<div class="tsd-signature tsd-kind-icon">widget<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="core.widgetmanager.html" class="tsd-signature-type">WidgetManager</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L74">preferences/src/browser/preferences-tree-widget.ts:74</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="widgets" class="tsd-anchor"></a>
+					<h3>widgets</h3>
+					<div class="tsd-signature tsd-kind-icon">widgets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Panel.widgets</p>
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/panel.d.ts:23</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A read-only array of the widgets in the panel.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="workspaceservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> workspace<wbr>Service</h3>
+					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="workspace.workspaceservice.html" class="tsd-signature-type">WorkspaceService</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L86">preferences/src/browser/preferences-tree-widget.ts:86</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="id-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> ID</h3>
+					<div class="tsd-signature tsd-kind-icon">ID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;preferences_container_widget&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L57">preferences/src/browser/preferences-tree-widget.ts:57</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="defaultrenderer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Renderer</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Renderer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Renderer</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:202</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The default <code>Renderer</code> instance.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="autosave" class="tsd-anchor"></a>
+					<h3>auto<wbr>Save</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> autoSave<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"on"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"off"</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L109">preferences/src/browser/preferences-tree-widget.ts:109</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">"on"</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">"off"</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="dirty" class="tsd-anchor"></a>
+					<h3>dirty</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> dirty<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L113">preferences/src/browser/preferences-tree-widget.ts:113</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="preferencescope" class="tsd-anchor"></a>
+					<h3>preference<wbr>Scope</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> preferenceScope<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/core.preferencescope.html" class="tsd-signature-type">PreferenceScope</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> preferenceScope<span class="tsd-signature-symbol">(</span>preferenceScope<span class="tsd-signature-symbol">: </span><a href="../enums/core.preferencescope.html" class="tsd-signature-type">PreferenceScope</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L125">preferences/src/browser/preferences-tree-widget.ts:125</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/core.preferencescope.html" class="tsd-signature-type">PreferenceScope</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L129">preferences/src/browser/preferences-tree-widget.ts:129</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>preferenceScope: <a href="../enums/core.preferencescope.html" class="tsd-signature-type">PreferenceScope</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="activate" class="tsd-anchor"></a>
+					<h3>activate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">activate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.activate</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:194</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Post an <code>&#39;activate-request&#39;</code> message to the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a simple convenience method for posting the message.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="activatepreferenceeditor" class="tsd-anchor"></a>
+					<h3>activate<wbr>Preference<wbr>Editor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">activate<wbr>Preference<wbr>Editor<span class="tsd-signature-symbol">(</span>preferenceScope<span class="tsd-signature-symbol">: </span><a href="../enums/core.preferencescope.html" class="tsd-signature-type">PreferenceScope</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L206">preferences/src/browser/preferences-tree-widget.ts:206</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>preferenceScope: <a href="../enums/core.preferencescope.html" class="tsd-signature-type">PreferenceScope</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="addclass" class="tsd-anchor"></a>
+					<h3>add<wbr>Class</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Class<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.addClass</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:147</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a class name to the widget&#39;s DOM node.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The class name to add to the node.</p>
+										<h4 id="notes">Notes</h4>
+										<p>If the class name is already added to the node, this is a no-op.</p>
+										<p>The class name must not contain whitespace.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="addwidget" class="tsd-anchor"></a>
+					<h3>add<wbr>Widget</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Widget<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Panel.addWidget</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/panel.d.ts:32</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a widget to the end of the panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>widget: <span class="tsd-signature-type">Widget</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The widget to add to the panel.</p>
+										<h4 id="notes">Notes</h4>
+										<p>If the widget is already contained in the panel, it will be moved.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="children" class="tsd-anchor"></a>
+					<h3>children</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.children</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:120</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create an iterator over the widget&#39;s children.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A new iterator over the children of the widget.</p>
+							<h4 id="notes">Notes</h4>
+							<p>The widget must have a populated layout in order to have children.</p>
+							<p>If a layout is not installed, the returned iterator will be empty.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="clearflag" class="tsd-anchor"></a>
+					<h3>clear<wbr>Flag</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">clear<wbr>Flag<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Flag</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.clearFlag</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:249</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Clear the given widget flag.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This will not typically be called directly by user code.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>flag: <span class="tsd-signature-type">Flag</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="close" class="tsd-anchor"></a>
+					<h3>close</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.close</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:201</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send a <code>&#39;close-request&#39;</code> message to the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a simple convenience method for sending the message.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="contains" class="tsd-anchor"></a>
+					<h3>contains</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">contains<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.contains</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:128</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether a widget is a descendant of this widget.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>widget: <span class="tsd-signature-type">Widget</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The descendant widget of interest.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p><code>true</code> if the widget is a descendant, <code>false</code> otherwise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides SplitPanel.dispose</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L101">preferences/src/browser/preferences-tree-widget.ts:101</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="doactivatepreferenceeditor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> do<wbr>Activate<wbr>Preference<wbr>Editor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">do<wbr>Activate<wbr>Preference<wbr>Editor<span class="tsd-signature-symbol">(</span>preferenceScope<span class="tsd-signature-symbol">: </span><a href="../enums/core.preferencescope.html" class="tsd-signature-type">PreferenceScope</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L211">preferences/src/browser/preferences-tree-widget.ts:211</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>preferenceScope: <a href="../enums/core.preferencescope.html" class="tsd-signature-type">PreferenceScope</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="fit" class="tsd-anchor"></a>
+					<h3>fit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">fit<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.fit</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:187</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Post a <code>&#39;fit-request&#39;</code> message to the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a simple convenience method for posting the message.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gettrackablewidgets" class="tsd-anchor"></a>
+					<h3>get<wbr>Trackable<wbr>Widgets</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Trackable<wbr>Widgets<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L121">preferences/src/browser/preferences-tree-widget.ts:121</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="handleeditorschanged" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> handle<wbr>Editors<wbr>Changed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Editors<wbr>Changed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L218">preferences/src/browser/preferences-tree-widget.ts:218</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="handleevent" class="tsd-anchor"></a>
+					<h3>handle<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Event<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from SplitPanel.handleEvent</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:96</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle the DOM events for the split panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">Event</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The DOM event sent to the panel.</p>
+										<h4 id="notes">Notes</h4>
+										<p>This method implements the DOM <code>EventListener</code> interface and is
+											called in response to events on the panel&#39;s DOM node. It should
+										not be called directly by user code.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="hasclass" class="tsd-anchor"></a>
+					<h3>has<wbr>Class</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Class<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.hasClass</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:136</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether the widget&#39;s DOM node has the given class name.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The class name of interest.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p><code>true</code> if the node has the class, <code>false</code> otherwise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="hide" class="tsd-anchor"></a>
+					<h3>hide</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">hide<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.hide</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:219</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Hide the widget and make it hidden to its parent widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This causes the <a href="preferences.preferencescontainer.html#ishidden">isHidden</a> property to be <code>true</code>.</p>
+								<p>If the widget is explicitly hidden, this is a no-op.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="init" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L91">preferences/src/browser/preferences-tree-widget.ts:91</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="insertwidget" class="tsd-anchor"></a>
+					<h3>insert<wbr>Widget</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">insert<wbr>Widget<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, widget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Panel.insertWidget</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/panel.d.ts:43</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Insert a widget at the specified index.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The index at which to insert the widget.</p>
+									</div>
+								</li>
+								<li>
+									<h5>widget: <span class="tsd-signature-type">Widget</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The widget to insert into to the panel.</p>
+										<h4 id="notes">Notes</h4>
+										<p>If the widget is already contained in the panel, it will be moved.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="notifylayout" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> notify<wbr>Layout</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">notify<wbr>Layout<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.notifyLayout</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:269</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invoke the message processing routine of the widget&#39;s layout.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The message to dispatch to the layout.</p>
+										<h4 id="notes">Notes</h4>
+										<p>This is a no-op if the widget does not have a layout.</p>
+										<p>This will not typically be called directly by user code.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+					<a name="onactivaterequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Activate<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Activate<wbr>Request<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides Widget.onActivateRequest</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L190">preferences/src/browser/preferences-tree-widget.ts:190</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+					<a name="onafterattach" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>After<wbr>Attach</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>After<wbr>Attach<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides Widget.onAfterAttach</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L133">preferences/src/browser/preferences-tree-widget.ts:133</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+					<a name="onafterdetach" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>After<wbr>Detach</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>After<wbr>Detach<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from SplitPanel.onAfterDetach</p>
+								<p>Overrides Widget.onAfterDetach</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:104</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on an <code>&#39;after-detach&#39;</code> message.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onafterhide" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>After<wbr>Hide</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>After<wbr>Hide<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.onAfterHide</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:332</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on an <code>&#39;after-hide&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onaftershow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>After<wbr>Show</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>After<wbr>Show<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.onAfterShow</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:318</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on an <code>&#39;after-show&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+					<a name="onbeforeattach" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Before<wbr>Attach</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Before<wbr>Attach<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from SplitPanel.onBeforeAttach</p>
+								<p>Overrides Widget.onBeforeAttach</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:100</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;before-attach&#39;</code> message.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onbeforedetach" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Before<wbr>Detach</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Before<wbr>Detach<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.onBeforeDetach</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:353</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;before-detach&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onbeforehide" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Before<wbr>Hide</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Before<wbr>Hide<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.onBeforeHide</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:325</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;before-hide&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onbeforeshow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Before<wbr>Show</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Before<wbr>Show<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.onBeforeShow</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:311</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;before-show&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+					<a name="onchildadded" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Child<wbr>Added</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Child<wbr>Added<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChildMessage</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from SplitPanel.onChildAdded</p>
+								<p>Overrides Widget.onChildAdded</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:108</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;child-added&#39;</code> message.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">ChildMessage</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+					<a name="onchildremoved" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Child<wbr>Removed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Child<wbr>Removed<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChildMessage</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from SplitPanel.onChildRemoved</p>
+								<p>Overrides Widget.onChildRemoved</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:112</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;child-removed&#39;</code> message.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">ChildMessage</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+					<a name="oncloserequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Close<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Close<wbr>Request<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides Widget.onCloseRequest</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L197">preferences/src/browser/preferences-tree-widget.ts:197</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onfitrequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Fit<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Fit<wbr>Request<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.onFitRequest</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:297</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;fit-request&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onresize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Resize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Resize<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResizeMessage</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.onResize</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:283</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on a <code>&#39;resize&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">ResizeMessage</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="onupdaterequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Update<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Update<wbr>Request<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.onUpdateRequest</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:290</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A message handler invoked on an <code>&#39;update-request&#39;</code> message.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>The default implementation of this handler is a no-op.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="processmessage" class="tsd-anchor"></a>
+					<h3>process<wbr>Message</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">process<wbr>Message<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Message</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.processMessage</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:258</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Process a message sent to the widget.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">Message</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The message sent to the widget.</p>
+										<h4 id="notes">Notes</h4>
+										<p>Subclasses may reimplement this method as needed.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="refreshfolderspreferenceseditor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> refresh<wbr>Folders<wbr>Preferences<wbr>Editor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">refresh<wbr>Folders<wbr>Preferences<wbr>Editor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L239">preferences/src/browser/preferences-tree-widget.ts:239</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="relativesizes" class="tsd-anchor"></a>
+					<h3>relative<wbr>Sizes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">relative<wbr>Sizes<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from SplitPanel.relativeSizes</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:74</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the relative sizes of the widgets in the panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>A new array of the relative sizes of the widgets.</p>
+							<h4 id="notes">Notes</h4>
+							<p>The returned sizes reflect the sizes of the widgets normalized
+							relative to their siblings.</p>
+							<p>This method <strong>does not</strong> measure the DOM nodes.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="removeclass" class="tsd-anchor"></a>
+					<h3>remove<wbr>Class</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Class<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.removeClass</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:158</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove a class name from the widget&#39;s DOM node.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The class name to remove from the node.</p>
+										<h4 id="notes">Notes</h4>
+										<p>If the class name is not yet added to the node, this is a no-op.</p>
+										<p>The class name must not contain whitespace.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="save" class="tsd-anchor"></a>
+					<h3>save</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">save<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/preferences/src/browser/preferences-tree-widget.ts#L117">preferences/src/browser/preferences-tree-widget.ts:117</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setflag" class="tsd-anchor"></a>
+					<h3>set<wbr>Flag</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Flag<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Flag</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.setFlag</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:242</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the given widget flag.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This will not typically be called directly by user code.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>flag: <span class="tsd-signature-type">Flag</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="sethidden" class="tsd-anchor"></a>
+					<h3>set<wbr>Hidden</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Hidden<span class="tsd-signature-symbol">(</span>hidden<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.setHidden</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:228</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Show or hide the widget according to a boolean value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>hidden: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><code>true</code> to hide the widget, or <code>false</code> to show it.</p>
+										<h4 id="notes">Notes</h4>
+										<p>This is a convenience method for <code>hide()</code> and <code>show()</code>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="setrelativesizes" class="tsd-anchor"></a>
+					<h3>set<wbr>Relative<wbr>Sizes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Relative<wbr>Sizes<span class="tsd-signature-symbol">(</span>sizes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from SplitPanel.setRelativeSizes</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:85</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the relative sizes for the widgets in the panel.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sizes: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The relative sizes for the widgets in the panel.</p>
+										<h4 id="notes">Notes</h4>
+										<p>Extra values are ignored, too few will yield an undefined layout.</p>
+										<p>The actual geometry of the DOM nodes is updated asynchronously.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="show" class="tsd-anchor"></a>
+					<h3>show</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">show<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.show</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:210</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Show the widget and make it visible to its parent widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This causes the <a href="preferences.preferencescontainer.html#ishidden">isHidden</a> property to be <code>false</code>.</p>
+								<p>If the widget is not explicitly hidden, this is a no-op.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="testflag" class="tsd-anchor"></a>
+					<h3>test<wbr>Flag</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">test<wbr>Flag<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Flag</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.testFlag</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:235</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Test whether the given widget flag is set.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This will not typically be called directly by user code.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>flag: <span class="tsd-signature-type">Flag</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="toggleclass" class="tsd-anchor"></a>
+					<h3>toggle<wbr>Class</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Class<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.toggleClass</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:173</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Toggle a class name on the widget&#39;s DOM node.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The class name to toggle on the node.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> force: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Whether to force add the class (<code>true</code>) or force
+											remove the class (<code>false</code>). If not provided, the presence of
+										the class will be toggled from its current state.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p><code>true</code> if the class is now present, <code>false</code> otherwise.</p>
+							<h4 id="notes">Notes</h4>
+							<p>The class name must not contain whitespace.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Widget.update</p>
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/widget.d.ts:180</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Post an <code>&#39;update-request&#39;</code> message to the widget.</p>
+								</div>
+								<h4 id="notes">Notes</h4>
+								<p>This is a simple convenience method for posting the message.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getstretch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Stretch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Stretch<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:210</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the split panel stretch factor for the given widget.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>widget: <span class="tsd-signature-type">Widget</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The widget of interest.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The split panel stretch factor for the widget.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="setstretch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> set<wbr>Stretch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Stretch<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Widget</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in /home/travis/build/theia-ide/theia/node_modules/@phosphor/widgets/lib/splitpanel.d.ts:218</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the split panel stretch factor for the given widget.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>widget: <span class="tsd-signature-type">Widget</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The widget of interest.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value for the stretch factor.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/preferences.html">preferences</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.abstractresourcepreferenceprovider.html" class="tsd-kind-icon">Abstract<wbr>Resource<wbr>Preference<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.folderpreferenceprovider.html" class="tsd-kind-icon">Folder<wbr>Preference<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.folderspreferencesprovider.html" class="tsd-kind-icon">Folders<wbr>Preferences<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferenceeditorcontainertabbarrenderer.html" class="tsd-kind-icon">Preference<wbr>Editor<wbr>Container<wbr>Tab<wbr>Bar<wbr>Renderer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferenceeditortabheaderrenderer.html" class="tsd-kind-icon">Preference<wbr>Editor<wbr>Tab<wbr>Header<wbr>Renderer</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferencescontainer.html" class="tsd-kind-icon">Preferences<wbr>Container</a>
+						<ul>
+							<li class=" tsd-kind-class tsd-parent-kind-class">
+								<a href="preferences.preferencescontainer.renderer.html" class="tsd-kind-icon">Renderer</a>
+							</li>
+							<li class=" tsd-kind-interface tsd-parent-kind-class">
+								<a href="../interfaces/preferences.preferencescontainer.ioptions.html" class="tsd-kind-icon">IOptions</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="preferences.preferencescontainer.html#alignment" class="tsd-kind-icon">Alignment</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="preferences.preferencescontainer.html#irenderer" class="tsd-kind-icon">IRenderer</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="preferences.preferencescontainer.html#orientation" class="tsd-kind-icon">Orientation</a>
+							</li>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#_preferencescope" class="tsd-kind-icon">_preference<wbr>Scope</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#alignment-1" class="tsd-kind-icon">alignment</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="preferences.preferencescontainer.html#currenteditor" class="tsd-kind-icon">current<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#dataset" class="tsd-kind-icon">dataset</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="preferences.preferencescontainer.html#deferrededitors" class="tsd-kind-icon">deferred<wbr>Editors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#disposed" class="tsd-kind-icon">disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="preferences.preferencescontainer.html#editors" class="tsd-kind-icon">editors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#editorscontainer" class="tsd-kind-icon">editors<wbr>Container</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#handles" class="tsd-kind-icon">handles</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#isattached" class="tsd-kind-icon">is<wbr>Attached</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#isvisible" class="tsd-kind-icon">is<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#layout" class="tsd-kind-icon">layout</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#messageservice" class="tsd-kind-icon">message<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#node" class="tsd-kind-icon">node</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="preferences.preferencescontainer.html#ondidchangetrackablewidgets" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Trackable<wbr>Widgets</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#ondidchangetrackablewidgetsemitter" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Trackable<wbr>Widgets<wbr>Emitter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="preferences.preferencescontainer.html#ondirtychanged" class="tsd-kind-icon">on<wbr>Dirty<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#ondirtychangedemitter" class="tsd-kind-icon">on<wbr>Dirty<wbr>Changed<wbr>Emitter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#orientation-1" class="tsd-kind-icon">orientation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#parent" class="tsd-kind-icon">parent</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#preferenceservice" class="tsd-kind-icon">preference<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#renderer-1" class="tsd-kind-icon">renderer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#shell" class="tsd-kind-icon">shell</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#spacing" class="tsd-kind-icon">spacing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#title" class="tsd-kind-icon">title</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#treewidget" class="tsd-kind-icon">tree<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#widgetmanager" class="tsd-kind-icon">widget<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#widgets" class="tsd-kind-icon">widgets</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#workspaceservice" class="tsd-kind-icon">workspace<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="preferences.preferencescontainer.html#id-1" class="tsd-kind-icon">ID</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="preferences.preferencescontainer.html#defaultrenderer" class="tsd-kind-icon">default<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="preferences.preferencescontainer.html#autosave" class="tsd-kind-icon">auto<wbr>Save</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="preferences.preferencescontainer.html#dirty" class="tsd-kind-icon">dirty</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="preferences.preferencescontainer.html#preferencescope" class="tsd-kind-icon">preference<wbr>Scope</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#activate" class="tsd-kind-icon">activate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="preferences.preferencescontainer.html#activatepreferenceeditor" class="tsd-kind-icon">activate<wbr>Preference<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#addclass" class="tsd-kind-icon">add<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#addwidget" class="tsd-kind-icon">add<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#children" class="tsd-kind-icon">children</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#clearflag" class="tsd-kind-icon">clear<wbr>Flag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#close" class="tsd-kind-icon">close</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#contains" class="tsd-kind-icon">contains</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="preferences.preferencescontainer.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="preferences.preferencescontainer.html#doactivatepreferenceeditor" class="tsd-kind-icon">do<wbr>Activate<wbr>Preference<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#fit" class="tsd-kind-icon">fit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="preferences.preferencescontainer.html#gettrackablewidgets" class="tsd-kind-icon">get<wbr>Trackable<wbr>Widgets</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#handleeditorschanged" class="tsd-kind-icon">handle<wbr>Editors<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#handleevent" class="tsd-kind-icon">handle<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#hasclass" class="tsd-kind-icon">has<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#hide" class="tsd-kind-icon">hide</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#insertwidget" class="tsd-kind-icon">insert<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#notifylayout" class="tsd-kind-icon">notify<wbr>Layout</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onactivaterequest" class="tsd-kind-icon">on<wbr>Activate<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onafterattach" class="tsd-kind-icon">on<wbr>After<wbr>Attach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onafterdetach" class="tsd-kind-icon">on<wbr>After<wbr>Detach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onafterhide" class="tsd-kind-icon">on<wbr>After<wbr>Hide</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onaftershow" class="tsd-kind-icon">on<wbr>After<wbr>Show</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onbeforeattach" class="tsd-kind-icon">on<wbr>Before<wbr>Attach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onbeforedetach" class="tsd-kind-icon">on<wbr>Before<wbr>Detach</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onbeforehide" class="tsd-kind-icon">on<wbr>Before<wbr>Hide</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onbeforeshow" class="tsd-kind-icon">on<wbr>Before<wbr>Show</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onchildadded" class="tsd-kind-icon">on<wbr>Child<wbr>Added</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onchildremoved" class="tsd-kind-icon">on<wbr>Child<wbr>Removed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#oncloserequest" class="tsd-kind-icon">on<wbr>Close<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onfitrequest" class="tsd-kind-icon">on<wbr>Fit<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onresize" class="tsd-kind-icon">on<wbr>Resize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="preferences.preferencescontainer.html#onupdaterequest" class="tsd-kind-icon">on<wbr>Update<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#processmessage" class="tsd-kind-icon">process<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="preferences.preferencescontainer.html#refreshfolderspreferenceseditor" class="tsd-kind-icon">refresh<wbr>Folders<wbr>Preferences<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#relativesizes" class="tsd-kind-icon">relative<wbr>Sizes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#removeclass" class="tsd-kind-icon">remove<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="preferences.preferencescontainer.html#save" class="tsd-kind-icon">save</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#setflag" class="tsd-kind-icon">set<wbr>Flag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#sethidden" class="tsd-kind-icon">set<wbr>Hidden</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#setrelativesizes" class="tsd-kind-icon">set<wbr>Relative<wbr>Sizes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#show" class="tsd-kind-icon">show</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#testflag" class="tsd-kind-icon">test<wbr>Flag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#toggleclass" class="tsd-kind-icon">toggle<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="preferences.preferencescontainer.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="preferences.preferencescontainer.html#getstretch" class="tsd-kind-icon">get<wbr>Stretch</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="preferences.preferencescontainer.html#setstretch" class="tsd-kind-icon">set<wbr>Stretch</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferencescontribution.html" class="tsd-kind-icon">Preferences<wbr>Contribution</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferencesdecorator.html" class="tsd-kind-icon">Preferences<wbr>Decorator</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferencesdecoratorservice.html" class="tsd-kind-icon">Preferences<wbr>Decorator<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferenceseditorwidget.html" class="tsd-kind-icon">Preferences<wbr>Editor<wbr>Widget</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferenceseditorwidgettitle.html" class="tsd-kind-icon">Preferences<wbr>Editor<wbr>Widget<wbr>Title</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferenceseditorscontainer.html" class="tsd-kind-icon">Preferences<wbr>Editors<wbr>Container</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferencesfrontendapplicationcontribution.html" class="tsd-kind-icon">Preferences<wbr>Frontend<wbr>Application<wbr>Contribution</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferencesmenufactory.html" class="tsd-kind-icon">Preferences<wbr>Menu<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.preferencestreewidget.html" class="tsd-kind-icon">Preferences<wbr>Tree<wbr>Widget</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.userpreferenceprovider.html" class="tsd-kind-icon">User<wbr>Preference<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.workspacefilepreferenceprovider.html" class="tsd-kind-icon">Workspace<wbr>File<wbr>Preference<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.workspacefilepreferenceprovideroptions.html" class="tsd-kind-icon">Workspace<wbr>File<wbr>Preference<wbr>Provider<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="preferences.workspacepreferenceprovider.html" class="tsd-kind-icon">Workspace<wbr>Preference<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/preferences.folderpreferenceproviderfactory.html" class="tsd-kind-icon">Folder<wbr>Preference<wbr>Provider<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/preferences.folderpreferenceprovideroptions.html" class="tsd-kind-icon">Folder<wbr>Preference<wbr>Provider<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/preferences.html#workspacefilepreferenceproviderfactory" class="tsd-kind-icon">Workspace<wbr>File<wbr>Preference<wbr>Provider<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/preferences.html#folderpreferenceproviderfactory-1" class="tsd-kind-icon">Folder<wbr>Preference<wbr>Provider<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/preferences.html#folderpreferenceprovideroptions-1" class="tsd-kind-icon">Folder<wbr>Preference<wbr>Provider<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/preferences.html#user_preference_uri" class="tsd-kind-icon">USER_<wbr>PREFERENCE_<wbr>URI</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/preferences.html#workspacefilepreferenceproviderfactory-1" class="tsd-kind-icon">Workspace<wbr>File<wbr>Preference<wbr>Provider<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/preferences.html#bindfolderpreferenceprovider" class="tsd-kind-icon">bind<wbr>Folder<wbr>Preference<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/preferences.html#bindpreferenceproviders" class="tsd-kind-icon">bind<wbr>Preference<wbr>Providers</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/preferences.html#bindpreferences" class="tsd-kind-icon">bind<wbr>Preferences</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/preferences.html#bindpreferencesdecorator" class="tsd-kind-icon">bind<wbr>Preferences<wbr>Decorator</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/preferences.html#bindworkspacefilepreferenceprovider" class="tsd-kind-icon">bind<wbr>Workspace<wbr>File<wbr>Preference<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/preferences.html#createpreferencestreewidget" class="tsd-kind-icon">create<wbr>Preferences<wbr>Tree<wbr>Widget</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CppBuildConfigurationManagerImpl | Theia TypeDoc</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Theia TypeDoc</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/cpp.html">cpp</a>
+				</li>
+				<li>
+					<a href="cpp.cppbuildconfigurationmanagerimpl.html">CppBuildConfigurationManagerImpl</a>
+				</li>
+			</ul>
+			<h1>Class CppBuildConfigurationManagerImpl</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Entry point to get the list of build configurations and get/set the active
+						build configuration.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">CppBuildConfigurationManagerImpl</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/cpp.cppbuildconfigurationmanager.html" class="tsd-signature-type">CppBuildConfigurationManager</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="cpp.cppbuildconfigurationmanagerimpl.html#active_build_configuration_storage_key" class="tsd-kind-icon">ACTIVE_<wbr>BUILD_<wbr>CONFIGURATION_<wbr>STORAGE_<wbr>KEY</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="cpp.cppbuildconfigurationmanagerimpl.html#activeconfig" class="tsd-kind-icon">active<wbr>Config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="cpp.cppbuildconfigurationmanagerimpl.html#activeconfigchangeemitter" class="tsd-kind-icon">active<wbr>Config<wbr>Change<wbr>Emitter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="cpp.cppbuildconfigurationmanagerimpl.html#cpppreferences" class="tsd-kind-icon">cpp<wbr>Preferences</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="cpp.cppbuildconfigurationmanagerimpl.html#ready" class="tsd-kind-icon">ready</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="cpp.cppbuildconfigurationmanagerimpl.html#storageservice" class="tsd-kind-icon">storage<wbr>Service</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="cpp.cppbuildconfigurationmanagerimpl.html#onactiveconfigchange" class="tsd-kind-icon">on<wbr>Active<wbr>Config<wbr>Change</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="cpp.cppbuildconfigurationmanagerimpl.html#equals" class="tsd-kind-icon">equals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="cpp.cppbuildconfigurationmanagerimpl.html#getactiveconfig" class="tsd-kind-icon">get<wbr>Active<wbr>Config</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="cpp.cppbuildconfigurationmanagerimpl.html#getconfigs" class="tsd-kind-icon">get<wbr>Configs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="cpp.cppbuildconfigurationmanagerimpl.html#getvalidconfigs" class="tsd-kind-icon">get<wbr>Valid<wbr>Configs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="cpp.cppbuildconfigurationmanagerimpl.html#handlepreferencesupdate" class="tsd-kind-icon">handle<wbr>Preferences<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="cpp.cppbuildconfigurationmanagerimpl.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="cpp.cppbuildconfigurationmanagerimpl.html#loadactiveconfiguration" class="tsd-kind-icon">load<wbr>Active<wbr>Configuration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="cpp.cppbuildconfigurationmanagerimpl.html#saveactiveconfiguration" class="tsd-kind-icon">save<wbr>Active<wbr>Configuration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="cpp.cppbuildconfigurationmanagerimpl.html#setactiveconfig" class="tsd-kind-icon">set<wbr>Active<wbr>Config</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="active_build_configuration_storage_key" class="tsd-anchor"></a>
+					<h3>ACTIVE_<wbr>BUILD_<wbr>CONFIGURATION_<wbr>STORAGE_<wbr>KEY</h3>
+					<div class="tsd-signature tsd-kind-icon">ACTIVE_<wbr>BUILD_<wbr>CONFIGURATION_<wbr>STORAGE_<wbr>KEY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"cpp.active-build-configuration"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;cpp.active-build-configuration&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L128">cpp/src/browser/cpp-build-configurations.ts:128</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="activeconfig" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> active<wbr>Config</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L121">cpp/src/browser/cpp-build-configurations.ts:121</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The current active build configuration.
+							If <code>undefined</code> there is no current active build configuration selected.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="activeconfigchangeemitter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> active<wbr>Config<wbr>Change<wbr>Emitter</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Config<wbr>Change<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Emitter&lt;CppBuildConfiguration | undefined&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L126">cpp/src/browser/cpp-build-configurations.ts:126</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Emitter for when the active build configuration changes.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="cpppreferences" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> cpp<wbr>Preferences</h3>
+					<div class="tsd-signature tsd-kind-icon">cpp<wbr>Preferences<span class="tsd-signature-symbol">:</span> <a href="../modules/cpp.html#cpppreferences-1" class="tsd-signature-type">CppPreferences</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L112">cpp/src/browser/cpp-build-configurations.ts:112</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="ready" class="tsd-anchor"></a>
+					<h3>ready</h3>
+					<div class="tsd-signature tsd-kind-icon">ready<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/cpp.cppbuildconfigurationmanager.html">CppBuildConfigurationManager</a>.<a href="../interfaces/cpp.cppbuildconfigurationmanager.html#ready">ready</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L130">cpp/src/browser/cpp-build-configurations.ts:130</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="storageservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> storage<wbr>Service</h3>
+					<div class="tsd-signature tsd-kind-icon">storage<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.storageservice.html" class="tsd-signature-type">StorageService</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L115">cpp/src/browser/cpp-build-configurations.ts:115</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="onactiveconfigchange" class="tsd-anchor"></a>
+					<h3>on<wbr>Active<wbr>Config<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onActiveConfigChange<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.event.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L205">cpp/src/browser/cpp-build-configurations.ts:205</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/core.event.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="equals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> equals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a>, b<span class="tsd-signature-symbol">: </span><a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L191">cpp/src/browser/cpp-build-configurations.ts:191</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determine if two <code>CppBuildConfiguration</code> are equal.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><code>CppBuildConfiguration</code>.</p>
+									</div>
+								</li>
+								<li>
+									<h5>b: <a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><code>CppBuildConfiguration</code>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getactiveconfig" class="tsd-anchor"></a>
+					<h3>get<wbr>Active<wbr>Config</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Active<wbr>Config<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/cpp.cppbuildconfigurationmanager.html">CppBuildConfigurationManager</a>.<a href="../interfaces/cpp.cppbuildconfigurationmanager.html#getactiveconfig">getActiveConfig</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L195">cpp/src/browser/cpp-build-configurations.ts:195</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getconfigs" class="tsd-anchor"></a>
+					<h3>get<wbr>Configs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Configs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/cpp.cppbuildconfigurationmanager.html">CppBuildConfigurationManager</a>.<a href="../interfaces/cpp.cppbuildconfigurationmanager.html#getconfigs">getConfigs</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L209">cpp/src/browser/cpp-build-configurations.ts:209</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getvalidconfigs" class="tsd-anchor"></a>
+					<h3>get<wbr>Valid<wbr>Configs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Valid<wbr>Configs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/cpp.cppbuildconfigurationmanager.html">CppBuildConfigurationManager</a>.<a href="../interfaces/cpp.cppbuildconfigurationmanager.html#getvalidconfigs">getValidConfigs</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L213">cpp/src/browser/cpp-build-configurations.ts:213</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="handlepreferencesupdate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> handle<wbr>Preferences<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Preferences<wbr>Update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L175">cpp/src/browser/cpp-build-configurations.ts:175</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Update the active build configuration if applicable.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L133">cpp/src/browser/cpp-build-configurations.ts:133</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="loadactiveconfiguration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> load<wbr>Active<wbr>Configuration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Active<wbr>Configuration<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L145">cpp/src/browser/cpp-build-configurations.ts:145</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Load the active build configuration from persistent storage.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="saveactiveconfiguration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> save<wbr>Active<wbr>Configuration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Active<wbr>Configuration<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L165">cpp/src/browser/cpp-build-configurations.ts:165</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Save the active build configuration to persistent storage.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the active <code>CppBuildConfiguration</code>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setactiveconfig" class="tsd-anchor"></a>
+					<h3>set<wbr>Active<wbr>Config</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Active<wbr>Config<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/cpp.cppbuildconfigurationmanager.html">CppBuildConfigurationManager</a>.<a href="../interfaces/cpp.cppbuildconfigurationmanager.html#setactiveconfig">setActiveConfig</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/theia-ide/theia/blob/cc51575/packages/cpp/src/browser/cpp-build-configurations.ts#L199">cpp/src/browser/cpp-build-configurations.ts:199</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <a href="../interfaces/cpp.cppbuildconfiguration.html" class="tsd-signature-type">CppBuildConfiguration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/cpp.html">cpp</a>
+						<ul>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="../modules/cpp.switchsourceheaderrequest.html">Switch<wbr>Source<wbr>Header<wbr>Request</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="cpp.cppbuildconfigurationmanagerimpl.html" class="tsd-kind-icon">Cpp<wbr>Build<wbr>Configuration<wbr>Manager<wbr>Impl</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#active_build_configuration_storage_key" class="tsd-kind-icon">ACTIVE_<wbr>BUILD_<wbr>CONFIGURATION_<wbr>STORAGE_<wbr>KEY</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#activeconfig" class="tsd-kind-icon">active<wbr>Config</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#activeconfigchangeemitter" class="tsd-kind-icon">active<wbr>Config<wbr>Change<wbr>Emitter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#cpppreferences" class="tsd-kind-icon">cpp<wbr>Preferences</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#ready" class="tsd-kind-icon">ready</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#storageservice" class="tsd-kind-icon">storage<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#onactiveconfigchange" class="tsd-kind-icon">on<wbr>Active<wbr>Config<wbr>Change</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#equals" class="tsd-kind-icon">equals</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#getactiveconfig" class="tsd-kind-icon">get<wbr>Active<wbr>Config</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#getconfigs" class="tsd-kind-icon">get<wbr>Configs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#getvalidconfigs" class="tsd-kind-icon">get<wbr>Valid<wbr>Configs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#handlepreferencesupdate" class="tsd-kind-icon">handle<wbr>Preferences<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#loadactiveconfiguration" class="tsd-kind-icon">load<wbr>Active<wbr>Configuration</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#saveactiveconfiguration" class="tsd-kind-icon">save<wbr>Active<wbr>Configuration</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="cpp.cppbuildconfigurationmanagerimpl.html#setactiveconfig" class="tsd-kind-icon">set<wbr>Active<wbr>Config</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
