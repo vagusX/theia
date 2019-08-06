@@ -77,6 +77,17 @@ export class ProblemMatcherRegistry {
     }
 
     /**
+     * Returns all registered problem matchers in the registry.
+     */
+    getAll(): NamedProblemMatcher[] {
+        const all: NamedProblemMatcher[] = [];
+        for (const matcherName of Object.keys(this.matchers)) {
+            all.push(this.get(matcherName)!);
+        }
+        return all;
+    }
+
+    /**
      * Transforms the `ProblemMatcherContribution` to a `ProblemMatcher`
      *
      * @return the problem matcher
